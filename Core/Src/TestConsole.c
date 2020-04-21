@@ -16,6 +16,7 @@ void StartConsol(void const * argument)
   for(;;)
   {
 
+	  osDelay(1000);
 	  /*
     osDelay(1000);
     if(HAL_GPIO_ReadPin(GPIOI,GPIO_PIN_2))
