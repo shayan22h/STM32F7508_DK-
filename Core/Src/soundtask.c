@@ -35,7 +35,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	adcVal = HAL_ADC_GetValue(&hadc3);
 	uartBuf[0] =(uint8_t)adcVal;
 	HAL_UART_Transmit(&huart1, (uint8_t *)&adcVal, 1, 0xFFFF);
-	//HAL_UART_Transmit(&huart1, (uint8_t *)&uartBuf, 1, 0xFFFF);
+
 }
 void HAL_ADC_ErrorCallback(ADC_HandleTypeDef* hadc)
 {
